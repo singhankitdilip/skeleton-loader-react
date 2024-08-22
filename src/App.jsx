@@ -7,12 +7,12 @@ import moon from "../src/assets/moon.png";
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Handle the toggle button change
+ 
   const handleChange = () => {
     setIsDarkMode(!isDarkMode);
   };
 
-  // Apply dark mode class to the body
+  
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
